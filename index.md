@@ -36,7 +36,7 @@
 |Sep 11 | Ch 4.1-4.3 | Context Free Grammars  | LL(1) Grammars | LL(1) Parsing    | Scanner Due |
 |Sep 18 | Ch 4.4-4.6 |  Shift-Reduce Parsing  | LR(0) Automaton | SLR Parsing     | [HW3 Due Wed](homework.md) |
 |Sep 25 | Ch 5       | LR(1) and Recap | Bison                 | Bison            | [HW4 Due Wed](homework.md) |
-|Oct 2  | Ch 5       | Parsing B-Minor | Parsing B-Minor       | Abstract Syntax Tree |  | AST Handout](ast.html) |
+|Oct 2  | Ch 5       | Parsing B-Minor | Parsing B-Minor       | Abstract Syntax Tree |  | [AST Handout](ast.html) |
 |Oct 9  | Ch 6       | Abstract Syntax Tree | Review           | **Midterm Exam** | Parser Due     |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     |                   |
 |Oct 23 | Ch 7       | Type Systems    | Name Resolution       | Typechecking     |                   |
