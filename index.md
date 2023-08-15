@@ -45,8 +45,9 @@
 |Nov 6  | Ch 10      | Assembly        | Assembly              | Assembly         |                   |
 |Nov 13 | Ch 11      | Codegen         | Codegen               | Codegen          | [Typecheck Due Mon](typecheck.md)|
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   |                   |
-|Nov 27 | Ch 12      | Optimization    | Garbage Coll.         | Garbage Coll.    |
+|Nov 27 | Ch 12      | Optimization    | Garbage Coll.         | Garbage Coll.    |                   |
 |Dec 4  |            | Catch Up        | Review                |                  | [Code Generator Due Wed](codegen.md)|
+|Dec 11 |            | **Final Exam 8-10AM** |                     |                  |                    |
 
 [CFG Tool](https://web.stanford.edu/class/archive/cs/cs103/cs103.1156/tools/cfg/)
 [Joke](https://xkcd.com/1090/)
