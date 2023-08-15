@@ -1,0 +1,46 @@
+<h2>SLR Parsing Example</h2>
+
+<style>
+div#grammar {
+	font-size: 150%;
+	font-face: helvetica;
+	font-weight: bold;
+}
+th, td {
+    border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+</style>
+<table>
+<tr>
+<td>
+<td>id
+<td>+
+<td>(
+<td>)
+<td>$
+<td>P
+<td>E
+<td>T
+<tr><td>0<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>1<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>2<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>3<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>4<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>5<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>6<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>7<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+<tr><td>8<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>
+</table>
+
+<div class=grammar>
+<ol>
+<li> P -> E
+<li> E -> E + T 
+<li> E -> T
+<li> T -> id (E)
+<li> T -> id
+</ol>
+</div>

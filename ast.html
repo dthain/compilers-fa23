@@ -1,0 +1,134 @@
+
+<style>
+table tr td {
+	margin: 20px;
+	padding: 5px;
+}
+
+td.head {
+	background: #dddddd;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 0px;
+	font-size: 75%;
+	font-weight: bold;
+}
+
+</style>
+
+
+<center>
+<h2>B-Minor Abstract Syntax Tree</h2>
+
+<table>
+<tr>
+<td class=head>decl.h
+<td class=head>param_list.h
+
+<tr valign=top>
+<td>
+<pre>
+struct decl {
+	char *name;
+	struct type *type;
+	struct expr *value;
+	struct stmt *code;
+	struct symbol *symbol;
+	struct decl *next;
+};
+</pre>
+<td>
+<pre>
+struct param_list {
+	char *name;
+	struct type *type;
+	struct symbol *symbol;
+	struct param_list *next;
+};
+</pre>
+<td>
+<tr>
+<td colspan=2 class=head>stmt.h
+
+<tr valign=top>
+<td>
+<pre>
+struct stmt {
+	stmt_t kind;
+	struct decl *decl;
+	struct expr *init_expr;
+	struct expr *expr;
+	struct expr *next_expr;
+	struct stmt *body;
+	struct stmt *else_body;
+	struct stmt *next;
+};
+</pre>
+<td>
+<pre>
+typedef enum {
+	STMT_DECL,
+	STMT_EXPR,
+	STMT_IF_ELSE,
+	STMT_FOR,
+	STMT_PRINT,
+	STMT_RETURN,
+	STMT_BLOCK
+} stmt_t;
+</pre>
+<tr>
+<td colspan=2 class=head>expr.h
+<tr valign=top>
+<td>
+<pre>
+struct expr {
+	expr_t kind;
+	struct expr *left;
+	struct expr *right;
+	const char *name;
+	struct symbol *symbol;
+	int literal_value;
+	const char * string_literal;
+};
+</pre>
+<td>
+<pre>
+typedef enum {
+	EXPR_ADD,
+	EXPR_SUB,
+	EXPR_MUL,
+	EXPR_DIV,
+	...
+	EXPR_INTEGER_LITERAL,
+	EXPR_STRING_LITERAL
+} expr_t;
+</pre>
+
+<tr valign=top>
+<td colspan=2 class=head>type.h
+
+<tr valign=top>
+<td>
+<pre>
+struct type {
+	type_t kind;
+	struct type *subtype;
+	struct param_list *params;
+};
+</pre>
+<td>
+<pre>
+typedef enum {
+	TYPE_BOOLEAN,
+	TYPE_CHARACTER,
+	TYPE_INTEGER,
+	TYPE_STRING,
+	TYPE_ARRAY,
+	TYPE_FUNCTION,
+	TYPE_VOID
+} type_t;
+</pre>
+<tr valign=top>
+</table>
+
+</center>
