@@ -98,6 +98,11 @@ during a brief lull to respond to messages, check the news, etc,
 but even one laptop open can be an unavoidable distraction for other
 people in the class.  Let's reserve this time for working together.
 
+Also note that this class is designed to be primarily an in-person
+learning experience.  Class recordings are a backup available if you
+are sick or otherwise excused.  But don't use recordings as a substitute
+for attending.
+
 ## Communications
 
 Assignments and the course schedule are available on the course website,
