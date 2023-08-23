@@ -5,12 +5,17 @@
 Prof. Douglas Thain
 - Email: `dthain@nd.edu`
 - Office: 384C Fitzpatrick Hall
-- Office Hours: 1-3PM Tue/Thu
+- Office Hours: 1-3PM Mon/Wed
 
-TA: Noah Ziems
-- Email: `nziems2@nd.edu`
+TA: Colin Thomas
+- Email: `cthoma26@nd.edu`
 - Office: 150B Fitzpatrick (CSE Student Commons)
-- Office Hours: 2-4PM Mon/Wed
+- Office Hours: TBA
+
+TA: David Simonetti
+- Email: `dsimone2@nd.edu`
+- Office: 150B Fitzpatrick (CSE Student Commons)
+- Office Hours: TBA
 
 ## Overview
 
@@ -45,7 +50,7 @@ correctly reported and fixed, up to a maximum of 10 points.  Read carefully!
 
 ## Course Web Page
 
-[http://dthain.github.io/compilers-fa22](http://dthain.github.io/compilers-fa22)
+[http://dthain.github.io/compilers-fa23](http://dthain.github.io/compilers-fa23)
 
 ## Textbook
 
@@ -97,7 +102,7 @@ people in the class.  Let's reserve this time for working together.
 
 Assignments and the course schedule are available on the course website,
 and assignment grades will be posted in Canvas.
-We will be using Slack (\#compilers-fa22) to handle general Q&amp;A for the class.
+We will be using Slack (\#compilers-fa23) to handle general Q&amp;A for the class.
 If you have a technical question that could be of interest to others,
 please post it here, so that others can benefit from the answers.
 
