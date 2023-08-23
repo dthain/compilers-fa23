@@ -36,21 +36,11 @@ an encoded string that can be printed back out.
 
 For example, if the input encoded string looks like this:
 
-<style>
-table, th, td {
-  border: 1px solid;
-}
-</style>
-
-<table>
-<tr><td>"<td>H<td>e<td>l<td>l<td>o<td>&bsol;<td>n<td>"<td>NULL
-</table>
+![](encode1.png)
 
 Then `string_decode` should convert it into this:
 
-<table>
-<tr><td>H<td>e<td>l<td>l<td>o<td>NEW<br>LINE<td>NULL
-</table>
+![](encode2.png)
 
 In a similar way, `string_encode` should reverse the process.
 
