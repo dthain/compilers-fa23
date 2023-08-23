@@ -85,7 +85,7 @@ Code | Value | Meaning
 
 Both strings and identifiers may be up to **255** characters long, not including the null terminator.
 
-B-minor also supports arrays of a fixed size.  They may be declared with no value, which causes them to contain all zeros:
+B-minor also supports global arrays of a fixed size, and local arrays of variable size. They may be declared with no value, which causes them to contain all zeros:
 
 ```
 a: array [5] integer;
@@ -184,7 +184,7 @@ if( temp>100 ) {
 
 // A for loop statement.
 for( i=0; i<100; i++ ) {
-    print i;0
+    print i;
 }
 ```
 
@@ -338,7 +338,7 @@ A: See section 7.3 in the textbook.
 A: No, those should be flagged as type errors, since we won't be implementing them in the code generation.
 
 - *Q: What sort of expression can be used to initialize the length of an array?*
-A: When an array is declared as a global or local variable, the length must be given as a constant integer.  Any more complex expression should result in a type error.  When an array is declared as a function parameter, it should have no length given.
+A: When an array is declared as a global variable, the length must be given as a constant integer. When an array is declared as a local variable, its length may be specified as an expression which the typechecker will evaluate as an integer. Any other expression should result in a type error.  When an array is declared as a function parameter, it should have no length given.
 
 -  *Q: What type should be assumed for a variable or function that cannot be resolved?*
 A:  There is no good assumption that you can make.  To avoid this problem, you should stop after the name resolution phase, if any name resolution errors are discovered.
