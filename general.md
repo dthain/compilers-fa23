@@ -23,22 +23,23 @@ Likewise, `make clean` should remove all intermediate object files, automaticall
 
 [Git](https://git-scm.com/) is a version control tool that allows you to save and collaborate on programming projects. In Git, your code is saved in two different locations--the local copy and the remote copy.
 
-**Step One: Remote Copy**. 
+### Make a Remote Copy
+
 1) First make sure you are logged into Github then go to the [starter code](http://github.com/dthain/compilerbook-starter-code) and click the green "use this template" button. If you don't see the button you likely aren't logged in.
 
-2) Use your netid followed by whatever you'd like as the repository name. Here is an example: `nziems2-compiler`
+2) Use your netid followed by whatever you'd like as the repository name. For example: `YOURNAME-compiler`
 
 3) Make sure your repository is **PRIVATE** not public, then click the green "Create repository from template" button.
 
-5) Go into your repository settings on the right side of the screen then click on "Collaborators". Add both me and Dr. Thain as contributors. Our usernames are `dthain` and `ziems`.
+5) Go into your repository settings on the right side of the screen then click on "Collaborators". Add `colinthomas-z80`, `David-Simonetti-ND` and 'dthain' as contributors, so that we can see and grade your submission.
 
 7) Go back to the repository main page and click the green "code" button then copy the URL under the "SSH" tab. The URL should look something like this:
-`git@github.com:Ziems/nziems2-compiler.git`. If you see a yellow box asking you to create public ssh keys, follow the instructions to do so.
+`git@github.com:YOURNAME/YOURNAME-compiler.git`. If you see a yellow box asking you to create public ssh keys, follow the instructions to do so.
 
 6) Open slack and reply to Noah's post in the class channel with a link to your repository(the url you copied)
 
+### Make a Local Copy
 
-**Step Two: Local Copy**.
 1) In a terminal, navigate where you'd like the project directory to be.
 
 2) Using the url you copied run the following command. Because the repository is private you will have to enter your GitHub username and password:
@@ -60,7 +61,7 @@ Likewise, `make clean` should remove all intermediate object files, automaticall
 
 3) On the righthand side under "Releases", click "Create new release"
 
-3) Click "Choose a new tag", type "scan" (or "parse", "print", "typecheck" or "codegen" for later assignments) then click "Create new tag"
+3) Click "Choose a new tag", type "encode" (or "scan", "parse", "print", "typecheck" or "codegen" for later assignments) then click "Create new tag"
 
 4) Click "Publish release" at the bottom and you're done!
 

@@ -66,22 +66,27 @@ s: string  = "hello bminor\n";
 
 An `integer` is always a signed 64 bit value.  `boolean` can take the literal values `true` or `false`.  `char` is a single 8-bit ASCII character.  `string` is a double-quoted constant string that is null-terminated and cannot be modified.
 
-Both `char` and `string` may contain the following backslash codes:
+Both `char` and `string` may contain any printable character
+between ASCII decimal values 32 and 126 inclusive.
+In addition, the following backslash codes are used to represent
+special characters:
 
 Code | Value | Meaning
 -----|-------|--------
-`\a` | 07 | Bell
-`\b` | 08 | Backspace
-`\e` | 1b | Escape
-`\f` | 0c | Form Feed (clear)
-`\n` | 0a | Newline
-`\r` | 0d | Carriage Return
-`\t` | 09 | Tab
-`\v` | 08 | Vertical Tab
-`\\` | 5c | Backslash
-`\'` | 27 | Single Quote
-`\"` | 22 | Double Quote
+`\a` |  7 | Bell
+`\b` |  8 | Backspace
+`\e` | 27 | Escape
+`\f` | 12 | Form Feed (clear)
+`\n` | 10 | Newline
+`\r` | 13 | Carriage Return
+`\t` |  9 | Tab
+`\v` |  8 | Vertical Tab
+`\\` | 92 | Backslash
+`\'` | 39 | Single Quote
+`\"` | 34 | Double Quote
 `\0xHH` | HH | The byte given by two characters HH in hexadecimal
+
+(Any other character following a backslash is not valid.)
 
 Both strings and identifiers may be up to **255** characters long, not including the null terminator.
 
