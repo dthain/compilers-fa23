@@ -32,7 +32,7 @@
 |Week | Reading | Monday | Wednesday | Friday | Assignment | Extra Links |
 |-----|---------|-------|------------|--------|------------|-------------|
 |Aug 21 | Ch 1-2     |                     | Introduction  | Overview    | [Syllabus](syllabus.md)  |
-|Aug 28 | Ch 3       | Regular Expressions | Finite Automata       | RE->NFA    | [HW1 Due Mon](homework.md)<br>Encoder Due Thu | [Hand Parser](https://github.com/cooperative-computing-lab/cctools/blob/master/dttools/src/jx_parse.c#L254) <br> [Regex 101](https://regex101.com/) <br> [Regex Golf](http://alf.nu/RegexGolf?world=regex&level=r02) <br> [Unicode](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) |
+|Aug 28 | Ch 3       | Regular Expressions <br>[HW1 Due Mon](homework.md) | Finite Automata       | RE->NFA    | Encoder Due Thu | [Hand Parser](https://github.com/cooperative-computing-lab/cctools/blob/master/dttools/src/jx_parse.c#L254) <br> [Regex 101](https://regex101.com/) <br> [Regex Golf](http://alf.nu/RegexGolf?world=regex&level=r02) <br> [Unicode](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) |
 |Sep 4  | Ch 3       | NFA->DFA            | Flex | Context Free Grammars | HW2 Due | [Flex Scanner Generator](https://westes.github.io/flex/manual/)
 |Sep 11 | Ch 4.1-4.3 | Context Free Grammars  | LL(1) Grammars | LL(1) Parsing    | Scanner Due Thu |
 |Sep 18 | Ch 4.4-4.6 |  Shift-Reduce Parsing  | LR(0) Automaton | SLR Parsing     | HW3 Due Thu |
