@@ -1,3 +1,5 @@
 theme: jekyll-theme-modernist
 title: CSE 40243 Fall 2023
 description: Compilers and Language Design Course at the University of Notre Dame
+github:
+    is_project_page: false
