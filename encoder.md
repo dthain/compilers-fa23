@@ -44,13 +44,13 @@ table, th, td {
 
 <table>
 <tr><td>"<td>H<td>e<td>l<td>l<td>o<td>&bsol;<td>n<td>"<td>NULL
-<table>
+</table>
 
 Then `string_decode` should convert it into this:
 
 <table>
 <tr><td>H<td>e<td>l<td>l<td>o<td>NEW<br>LINE<td>NULL
-<table>
+</table>
 
 In a similar way, `string_encode` should reverse the process.
 
