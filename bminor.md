@@ -1,10 +1,10 @@
 # B-Minor 2023 Language Overview
 
-**Note: The B-Minor language used in this class evolves
-a little each year, in order to provide new challenges
+**Note: The B-Minor language used in this class changes
+each year in order to provide new challenges 
 and opportunities.  This document differs from the one
-in the textbook by adding the `auto` keyword and the
-ternary `?:` operator.**
+in the textbook in the following ways:
+- Strings and characters have a number of additional escape codes.
 
 ## Overview
 
@@ -45,9 +45,9 @@ or an underscore.  These are examples of valid identifiers:
 i x mystr fog123 BigLongName55
 ```
 
-The following strings are B-minor keywords and may not be used as identifiers:
+The following strings are B-minor keywords (or reserved for future expansion) and may not be used as identifiers:
 ```
-array auto boolean char else false for function if integer print return string true void while
+array auto boolean char else false float for function if integer print return string true void while
 ```
 
 ## Types
@@ -66,10 +66,24 @@ s: string  = "hello bminor\n";
 
 An `integer` is always a signed 64 bit value.  `boolean` can take the literal values `true` or `false`.  `char` is a single 8-bit ASCII character.  `string` is a double-quoted constant string that is null-terminated and cannot be modified.
 
-Both `char` and `string` may contain the following backslash codes.
-`\n` indicates a linefeed (ASCII value 10), `\0` indicates a null
-(ASCII value zero), and a backslash followed by anything else indicates exactly
-the following character.  Both strings and identifiers may be up to **255** characters long, not including the null terminator.
+Both `char` and `string` may contain the following backslash codes:
+
+Code | Value | Meaning
+-----|-------|--------
+`\a` | 07 | Bell
+`\b` | 08 | Backspace
+`\e` | 1b | Escape
+`\f` | 0c | Form Feed (clear)
+`\n` | 0a | Newline
+`\r` | 0d | Carriage Return
+`\t` | 09 | Tab
+`\v` | 08 | Vertical Tab
+`\\` | 5c | Backslash
+`\'` | 27 | Single Quote
+`\"` | 22 | Double Quote
+`\0xHH` | HH | The byte given by two characters HH in hexadecimal
+
+Both strings and identifiers may be up to **255** characters long, not including the null terminator.
 
 B-minor also supports arrays of a fixed size.  They may be declared with no value, which causes them to contain all zeros:
 
@@ -82,18 +96,6 @@ Or, the entire array may be given specific values:
 ```
 a: array [5] integer = {1,2,3,4,5};
 ```
-
-A variable of type `auto` indicates an automatic type which is to be inferred
-by the value given on the right hand side.  For example, in the following code,
-`a` is of type `integer`, `b` is of type `string`,
-and `c` is of type `boolean`:
-
-```
-a: auto = 10;
-b: auto = "hello";
-c: auto = a < 100;
-```
-
 
 ## Expressions
 
@@ -111,7 +113,7 @@ meaning and level of precedence:
 | `<` `<=` `>` `>=` `==` `!=` | comparison |
 | `&&`            | logical and |
 | `||`            | logical or |
-| `=` `?:`        | assignment, **ternary** |
+| `=`             | assignment |
 
 B-minor is **strictly typed**.  This means that you may only assign a value
 to a variable (or function parameter) if the types match **exactly**.
@@ -278,11 +280,8 @@ A: No, they are not part of B-minor.
 
 - **Q: Can an integer have a leading negative/positive sign?**
 
-~~A: Yes, and it's important later that this counts as a single
-token, and not as two separate tokens. `-10` and `+123` should scan as NUMBER.~~~
-
-A: A leading positive/negative sign should be treated as a separate token.
-That is, `-123` should parse as `TOKEN_MINUS` `TOKEN_NUMBER`
+A: Yes, and it's important later that this counts as a single
+token, and not as two separate tokens. `-10` and `+123` should scan as NUMBER.
 
 ### Parsing
 
