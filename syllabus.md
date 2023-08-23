@@ -10,12 +10,12 @@ Prof. Douglas Thain
 TA: Colin Thomas
 - Email: `cthoma26@nd.edu`
 - Office: 150B Fitzpatrick (CSE Student Commons)
-- Office Hours: TBA
+- Office Hours: 3-5PM Mon/Wed
 
 TA: David Simonetti
 - Email: `dsimone2@nd.edu`
 - Office: 150B Fitzpatrick (CSE Student Commons)
-- Office Hours: TBA
+- Office Hours: 3-5PM Tue/Thu
 
 ## Overview
 
