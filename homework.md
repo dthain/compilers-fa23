@@ -45,6 +45,7 @@ Compile (ha) your answers together into one large document, taking care
 to organize and format answers and code, so that it is easy to follow.
 Submit one PDF document via Canvas.
 
+<!--
 ## Homework 2
 
 Do problems 1, 2, 4, 5, 6 at the end of Chapter 3.
@@ -56,3 +57,4 @@ Do problems 1, 2, 3, at the end of Chapter 4.
 ## Homework 4
 
 Do problems 4, 5, 6 at the end of Chapter 4.
+-->
