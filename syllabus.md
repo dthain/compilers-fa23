@@ -5,7 +5,7 @@
 Prof. Douglas Thain
 - Email: `dthain@nd.edu`
 - Office: 384C Fitzpatrick Hall
-- Office Hours: 1-3PM Mon/Wed
+- Office Hours: 1-3PM Mon/Thu
 
 TA: Colin Thomas
 - Email: `cthoma26@nd.edu`

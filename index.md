@@ -3,7 +3,7 @@
 ## Instructors
 
 |----|----|
-|![](images/dthain-small.jpg)| Prof. Douglas Thain (`dthain@nd.edu`)<br> Office Hours: 1-3PM Mon/Wed <br> Office: 384 Fitpatrick Hall|
+|![](images/dthain-small.jpg)| Prof. Douglas Thain (`dthain@nd.edu`)<br> Office Hours: 1-3PM Mon/Thu <br> Office: 384 Fitpatrick Hall|
 |![]()| TA: Colin Thomas (`cthoma26@nd.edu`)<br> Office Hours: TBA <br> Office: 150B Fitpatrick Hall (Student Commons)|
 |![]()| TA: David Simonetti (`dsimonet@nd.edu`)<br> Office Hours: TBA <br> Office: 150B Fitpatrick Hall (Student Commons)|
 
