@@ -218,13 +218,13 @@ may be of any type.  `integer`, `boolean`,
 and `char` arguments are passed by value, while
 `string` and `array` arguments are passed
 by reference. The implementation of arrays will include a 
-`len()` function which can be used to obtain the length of
+`array_length()` function which can be used to obtain the length of
 an array at runtime. 
 
 ```
 printarray: function void ( a: array [] integer ) = {
 	i: integer;
-	for( i=0;i<len(a);i++) {
+	for( i=0;i<array_length(a);i++) {
 		print a[i], "\n";
 	}
 }
