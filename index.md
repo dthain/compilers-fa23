@@ -20,6 +20,7 @@
 - [Canvas Course Page](https://canvas.nd.edu/courses/70800)
 - [Starter Code](https://github.com/dthain/compilerbook-starter-code)
 - [General Assignment Instructions](general)
+- [B-Minor 2023 Language Overview](bminor)
 - [Flex Scanner Generator](https://westes.github.io/flex/manual/)
 - [Bison Parser Generator](https://www.gnu.org/software/bison/manual/html_node/index.html)
 
