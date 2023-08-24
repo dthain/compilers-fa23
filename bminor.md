@@ -3,8 +3,11 @@
 **Note: The B-Minor language used in this class changes
 each year in order to provide new challenges 
 and opportunities.  This document differs from the one
-in the textbook in the following ways:
+in the textbook in the following ways:**
+
 - Strings and characters have a number of additional escape codes.
+- Arrays can be declared with length determined at runtime.
+- Floating point values and types have been added.
 
 ## Overview
 
