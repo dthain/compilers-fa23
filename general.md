@@ -42,7 +42,9 @@ Likewise, `make clean` should remove all intermediate object files, automaticall
 7) Go back to the repository main page and click the green "code" button then copy the URL under the "SSH" tab. The URL should look something like this:
 `git@github.com:YOURNAME/YOURNAME-compiler.git`. If you see a yellow box asking you to create public ssh keys, follow the instructions to do so.
 
-6) Open slack and reply to the post in the class channel with a link to your repository(the url you copied)
+### Tell Us About the Remote Copy
+
+1) Use [this form](https://forms.gle/DsLqr4zGxV54L6g48) to give use the URL of your repository.  (Just do this once for the first assignment.)
 
 ### Make a Local Copy
 
