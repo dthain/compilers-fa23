@@ -163,8 +163,8 @@ Function definitions may not be nested.
 
 Within functions, basic statements may be 
 arithmetic expressions, return statements,
-print statements, if and if-else statements, for loops,
-or code within inner { } groups:
+print statements, if and if-else statements, 
+for loops, or code within inner { } groups:
 
 ```
 // An arithmetic expression statement.
@@ -217,14 +217,14 @@ or `void` to indicate no type.  Function arguments
 may be of any type.  `integer`, `boolean`,
 and `char` arguments are passed by value, while
 `string` and `array` arguments are passed
-by reference. As in C, arrays passed
-by reference have an indeterminate size, and so the length
-is typically passed as an extra argument:
+by reference. The implementation of arrays will include a 
+`len()` function which can be used to obtain the length of
+an array at runtime. 
 
 ```
-printarray: function void ( a: array [] integer, size: integer ) = {
+printarray: function void ( a: array [] integer ) = {
 	i: integer;
-	for( i=0;i<size;i++) {
+	for( i=0;i<len(a);i++) {
 		print a[i], "\n";
 	}
 }
