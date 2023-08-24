@@ -46,7 +46,21 @@ to organize and format answers and code, so that it is easy to follow.
 Submit one PDF document via Canvas.
 
 <!--
+
 ## Homework 2
+
+1. Match the names of months which end in "ember"
+
+2. Match the pattern of a game of "duck duck goose" 
+
+3. Match a 48-bit MAC address in hexadecimal separated by hyphens. 
+
+4. Match any ICAO airport code from airports following the pattern of the United States, Canada, or Mexico    
+https://en.wikipedia.org/wiki/ICAO_airport_code    
+
+    Ex. KSBN, MMLP, CYBE 
+    
+5. Match any valid IPv4 Address in dot-decimal format https://en.wikipedia.org/wiki/Internet_Protocol_version_4
 
 Do problems 1, 2, 4, 5, 6 at the end of Chapter 3.
 
