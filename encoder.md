@@ -50,7 +50,7 @@ Then, write a main program called `bminor` to exercise your functions.
 (This program will eventually become the main program of your whole compiler.)
 
 ```
-./bminor -encode input.bminor
+./bminor --encode input.bminor
 ```
 
 This main program should open the filename given on the command line,
