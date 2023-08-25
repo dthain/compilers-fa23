@@ -85,7 +85,7 @@ You can do the same by creating a script called `runtest.sh` that does something
 
 for testfile in test/encode/good*.bminor
 do
-	if bminor -encode $testfile > $testfile.out
+	if bminor --encode $testfile > $testfile.out
 	then
 		echo "$testfile success (as expected)"
 	else
@@ -93,9 +93,9 @@ do
 	fi
 done
 
-for testfile in bad*.bminor
+for testfile in test/encode/bad*.bminor
 do
-	if bminor -encode test/encode/$testfile > $testfile.out
+	if bminor --encode test/encode/$testfile > $testfile.out
 	then
 		echo "$testfile success (INCORRECT)"
 	else
