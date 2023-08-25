@@ -18,7 +18,7 @@ your work will be graded.
 
 Your program must be invoked as follows:
 ```
-./bminor -scan sourcefile.bminor
+./bminor --scan sourcefile.bminor
 ```
 It must output to the standard output using `printf` the
 symbolic token types for each element of the input.

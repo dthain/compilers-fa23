@@ -24,7 +24,7 @@ Your final submission must have a Makefile that generates an executable
 called `bminor` that can be invoked like this:
 
 ```
-% bminor -codegen program.bminor program.s
+% bminor --codegen program.bminor program.s
 ```
 
 If the program passes all earlier phases of compiling

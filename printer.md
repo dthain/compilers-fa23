@@ -25,13 +25,13 @@ to add or adjust fields in the structures as necessary.
 
 The prior stages of the compiler should continue to work as they did before:
 ```
-./bminor -scan sourcefile.bminor
-./bminor -parse sourcefile.bminor
+./bminor --scan sourcefile.bminor
+./bminor --parse sourcefile.bminor
 ```
 
 For this stage, your program will be invoked as follows:
 ```
-./bminor -print sourcefile.bminor
+./bminor --print sourcefile.bminor
 ```
 
 And it should behave as follows:

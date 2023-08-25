@@ -25,9 +25,9 @@ Please review the [general instructions](general.md) for assignments.
 
 If your program is invoked as follows:
 ```
-bminor -scan sourcefile.bminor
-bminor -parse sourcefile.bminor
-bminor -print sourcefile.bminor
+bminor --scan sourcefile.bminor
+bminor --parse sourcefile.bminor
+bminor --print sourcefile.bminor
 ```
 ... then it should continue to scan, parse, or print out the AST, as in previous assignments.
 
@@ -37,7 +37,7 @@ For this assignment, you will add two new phases:
 
 If your program is invoked as follows:
 ```
-bminor -resolve sourcefile.bminor
+bminor --resolve sourcefile.bminor
 ```
 
 then it should parse, construct the AST, and then resolve variable names to
@@ -65,7 +65,7 @@ resolve error: x is not defined
 If your program is invoked like this:
 
 ```
-./bminor -typecheck sourcefile.bminor
+./bminor --typecheck sourcefile.bminor
 ```
 
 then it should parse, construct the AST, resolve variable names,
@@ -206,9 +206,9 @@ against expectations.
 
 For this assignment, your grade will be based upon the following:
 
--  Continued correctness of the -scan, -parse, and -print options. (10 percent)
--  General correctness of the -resolve option. (20 percent)
--  General correctness of the -typecheck option. (20 percent)
+-  Continued correctness of the --scan, --parse, and --print options. (10 percent)
+-  General correctness of the --resolve option. (20 percent)
+-  General correctness of the --typecheck option. (20 percent)
 -  Correctness of your test cases. (20 percent)
 -  Correctness on our test cases.  (20 percent)
 -  Good programming style. (10 percent)

@@ -33,7 +33,7 @@ Use the scanner code from the prior assignment as your starting point, being sur
 
 If your program is invoked like this:
 ```
-./bminor -parse sourcefile.bminor
+./bminor --parse sourcefile.bminor
 ```
 
 Then it should behave as follows:
@@ -43,7 +43,7 @@ Then it should behave as follows:
 
 If your program is invoked like this:
 ```
-./bminor -scan sourcefile.bminor
+./bminor --scan sourcefile.bminor
 ```
 
 Then it should continue to operate as in the previous assignment; this will facilitate debugging.
@@ -112,7 +112,7 @@ The exit status of `bminor` is **very important** because it indicates to the us
 
 for testfile in good*.bminor
 do
-	if bminor -parse $testfile > $testfile.out
+	if bminor --parse $testfile > $testfile.out
 	then
 		echo "$testfile success (as expected)"
 	else
@@ -122,7 +122,7 @@ done
 
 for testfile in bad*.bminor
 do
-	if bminor -parse $testfile > $testfile.out
+	if bminor --parse $testfile > $testfile.out
 	then
 		echo "$testfile success (INCORRECT)"
 	else
