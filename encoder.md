@@ -113,7 +113,7 @@ Now is the time to have a proper Makefile, and use it to build your compiler at 
 
 ## Turning In
 
-Be sure to `git add` and `git commit` all of your source files to your repository.  (Don't add object files, executables files, or anything else that is built from source files.)  Then review the [General Instructions for Turning In](general.md).  Make sure that your code is tagged as a release named `encode`.
+Be sure to `git add` and `git commit` all of your source files to your repository.  (Don't add object files, executables files, or anything else that is built from source files.)  Then review the [General Instructions for Turning In](general.md).  Make sure that your code is tagged as a release named `encoder`.
 
 **This assignment is due on Thursday, August 31st at 11:59PM  Late assignments are not accepted.**
 

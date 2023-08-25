@@ -13,13 +13,13 @@ Finally, you will complete your compiler by adding a code generator!
 We have discussed code generation extensively in class,
 so this assignment won't specify it in too much detail.
 The goal is simple: Your compiler must read in a B-minor program
-as described by the [language guide](bminor.html)
+as described by the [language guide](bminor)
 and emit an 64-bit X86 assembly language program that can be
 assembled, linked, and run correctly on the CSE student machines.
 
 ## Requirements
 
-Please review the [general requirements](general.md) for assignments.
+Please review the [general requirements](general) for assignments.
 Your final submission must have a Makefile that generates an executable
 called `bminor` that can be invoked like this:
 
@@ -72,20 +72,31 @@ or returns a single constant value from main.
 Work up bit by bit to handle integer arithmetic, then control statements, function calls, and so forth.
 When you are ready for a challenge, try these [complete example programs](https://github.com/dthain/compilerbook-examples/tree/master/tests/codegen)
 
-## Turning In
+## Testing
 
-Tag your submission with `codegen` in github to turn in.
-
-Your submission will be tested on the CSE student Linux machines,
-so make sure that your code works there. If you develop on your laptop or another computer,
-leave plenty of time before final submission to debug any differences between your computer and ours.
-
-As before, the options from the previous stage must continue to work correctly.
-You must also turn in a set of twenty test programs named good[1-20].bminor.
-Each one must be a valid B-minor program on which you produce working output.
+As with the previous step, create twenty good test cases named `test/codegen/good[0-19].bminor`
+that consist of valid B-minor programs.
 Make sure that your test cases start with very simple examples and work up to
 complex examples with complex expressions, control flow statements, and functions.
 (You tested all the bad cases in previous stages, so you don't need to include bad cases now.)
+
+You can also try these [example test cases](https://github.com/dthain/compilerbook-examples/tree/master/tests/codegen)
+that come with the textbook but note that they don't cover the features specific to [B-Minor 2023](bminor).
+We will evaluate your code using these and some other hidden test cases.
+
+As always, exercise good style in programming by choosing sensible
+variable names, breaking complex tasks down into smaller functions,
+and using constructive comments where appropriate.
+
+Ensure that `make clean`, `make`, and `make test`, and continue to work properly.
+
+## Turning In
+
+**Tag your submission with `codegen` in github to turn in.**
+
+Your submission will be tested on the CSE student Linux machines,
+so be sure to follow the [general instructions](general) and make
+sure that your code works there.
 
 Your grade on this project will be based upon:
 
@@ -95,5 +106,7 @@ Your grade on this project will be based upon:
 - Correctness on our test cases. (20 percent)
 - Good programming style. (10 percent)
  
-This assignment is due on Wednesday, December 7th by 11:59PM. Late assignments are not accepted.
+The first part of the code generator is due **Thursday, November 30th at 11:59PM**.  Late assignments are not accepted.
+
+The final code generator is due **Wednesday, Dec 6th at 11:59PM**.  Late assignments are not accepted.
 

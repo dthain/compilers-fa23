@@ -31,7 +31,7 @@ bminor --print sourcefile.bminor
 ```
 ... then it should continue to scan, parse, or print out the AST, as in previous assignments.
 
-For this assignment, you will add two new phases:
+For this assignment, you will add two new phases: name resolution and typechecking.
 
 ### Name Resolution
 
@@ -102,60 +102,6 @@ it is possible to express them syntactically:
 
 If these are encountered, emit a suitable error message indicating that they are not supported.
 
-### Type Inference
-
-Once you have basic type checking working correcly, then turn
-your attention to type inference.  You should handle two cases of
-automatically inferring types:
-
-First, if a local or global variable (not a function parameter) is declared with type `auto`, then
-the type of the variable should be determined from either its
-initializing expression or the first assignment to the variable.
-For example, in this case, `x` is an `integer` and
-`b` is a `boolean`:
-
-```
-x: auto = 5 + 10;
-b: auto;
-b = x < 20;
-```
-
-Second, if a function is declared with return type `auto`,
-then the return type of the function should be determined from the
-first occuring `return` statement.  For example, this statement
-implies that the containing function returns `boolean`:
-
-```
-return a < b;
-```
-
-In both of those cases, you should modify the `symbol` of the
-variable or function to be the inferred type and emit an explanatory
-message:
-
-```
-notice: type of x is integer
-notice: return type of function f is boolean
-```
-
-Keep in mind that there are a number of more complex situations
-that *could* be handled by type inference, but we won't ask
-you to address them in this assignment.  (Some of those cases
-require multiple passes through the program.)  If you encounter
-any other case where a symbol is used, but the type has not yet
-been determined, then emit a suitable error message.
-
-### Testing
-
-You must test your program extensively by designing and testing a large
-number of test cases.  Try these [example tests](https://github.com/dthain/compilers/tree/master/tests/typecheck) as a starting point.
-However, the example tests are not comprehensive, so you must also
-design and submit your own test files.  Ten should be
-named `good[1-10].bminor` and should be valid B-minor programs.
-Ten should be named `bad[1-10].bminor` and should contain
-at least one resolution error or type checking error.
-You should automate the execute of these tests, so that you can debug rapidly.
-
 ## Hints
 
 For name resolution, you will need to build a `scope`
@@ -200,9 +146,25 @@ Then, write `stmt_typecheck` and `decl_typecheck`
 to use the result of `expr_typecheck` and compare it
 against expectations.
 
+## Testing
+
+As with the previous step, create ten good test cases named `test/typechecker/good[0-10].bminor`
+that consist of valid B-minor programs and ten bad test cases `test/typechecker/bad[0-10].bminor`
+that contain at least one typechecking error.
+
+You can also try these [example test cases](https://github.com/dthain/compilerbook-examples/tree/master/tests/typechecker)
+that come with the textbook but note that they don't cover the features specific to [B-Minor 2023](bminor).
+We will evaluate your code using these and some other hidden test cases.
+
+As always, exercise good style in programming by choosing sensible
+variable names, breaking complex tasks down into smaller functions,
+and using constructive comments where appropriate.
+
+Ensure that `make clean`, `make`, and `make test`, and continue to work properly.
+
 ## Grading
 
-**Tag your submission with `typecheck` in github to turn in.**
+**Tag your submission with `typechecker` in github to turn in.**
 
 For this assignment, your grade will be based upon the following:
 
@@ -213,8 +175,7 @@ For this assignment, your grade will be based upon the following:
 -  Correctness on our test cases.  (20 percent)
 -  Good programming style. (10 percent)
 
-
-This assignment is due **Monday, November 14th at 11:59PM**.  Late assignments are not accepted.
+This assignment is due **Thursday, November 9th at 11:59PM**.  Late assignments are not accepted.
 
 ## Frequently Asked Questions
 

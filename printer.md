@@ -131,29 +131,24 @@ whether you ident by tabs or spaces (or how many spaces).
 
 ## Testing
 
-A compiler has many odd corner cases that you must carefully handle.
-You must test your program extensively by designing and testing a large
-number of test cases.  To encourage you to test thoroughly, we will
-also require you to turn in twenty test cases.  Ten should be
-named `good[0-9].bminor` and should contain valid B-minor programs.
-Ten should be named `bad[0-9].bminor` and should contain
-at least one *parse* error.  Be thorough, and take the time to
-write a new set of tests, distinct from your previously-submitted tests.
-The starter code gives some example tests
-to give you the idea, but they are not comprehensive, so write your own thorough tests.
+As with the previous step, create ten good test cases named `test/printer/good[0-10].bminor`
+that consist of valid B-minor programs and ten bad test cases `test/printer/bad[0-10].bminor`
+that contain at least one parsing error.
 
-The exit status of `bminor` is *very important* because it indicates to
-the user whether the program succeeded or not.
-The Unix convention is that the result of `main` (or the call to `exit`)
-should be zero to indicate success and non-zero to indicate failure.
+You can also try these [example test cases](https://github.com/dthain/compilerbook-examples/tree/master/tests/parser)
+that come with the textbook but note that they don't cover the features specific to [B-Minor 2023](bminor).
+We will evaluate your code using these and some other hidden test cases.
 
-Because the output of the pretty-printer must be a valid B-minor program,
+**Because the output of the pretty-printer must be a valid B-minor program,
 an excellent way to test your work is to run the output of the pretty
 printer back through the compiler a second time, to ensure that the
-output is parseable, and the output is identical that second time.
+output is parseable, and the output is identical that second time.**
 
-**You should write a script to automate this process so that you can
-quickly and easily check the correctness of your work.**
+As always, exercise good style in programming by choosing sensible
+variable names, breaking complex tasks down into smaller functions,
+and using constructive comments where appropriate.
+
+Ensure that `make clean`, `make`, and `make test`, and continue to work properly.
 
 ## Grading
 
@@ -172,7 +167,7 @@ For this assignment, your grade will be based upon the following:
 -  (20 points) Correctness on the instructors' hidden test cases.
 -  (10 points) Good programming style.  Each of the program components (main, scanner, parser) should be cleanly separated into multiple source files, complex or repetitive tasks should be broken into multiple functions, identifiers should be sensibly chosen, and the code generally commented and readable.
 
-This assignment is due ~~Monday~~ **Tuesday, November 1st at 11:59PM**.  Late assignments are not accepted.
+This assignment is due **Thursday, October 26th at 11:59PM**.  Late assignments are not accepted.
 
 ## Frequently Asked Questions
 
