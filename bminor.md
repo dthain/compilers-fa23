@@ -80,7 +80,7 @@ Code | Value | Meaning
 `\n` | 10 | Newline
 `\r` | 13 | Carriage Return
 `\t` |  9 | Tab
-`\v` |  8 | Vertical Tab
+`\v` | 11 | Vertical Tab
 `\\` | 92 | Backslash
 `\'` | 39 | Single Quote
 `\"` | 34 | Double Quote
