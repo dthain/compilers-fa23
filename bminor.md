@@ -3,8 +3,11 @@
 **Note: The B-Minor language used in this class changes
 each year in order to provide new challenges 
 and opportunities.  This document differs from the one
-in the textbook in the following ways:
+in the textbook in the following ways:**
+
 - Strings and characters have a number of additional escape codes.
+- Arrays can be declared with length determined at runtime.
+- Floating point values and types have been added.
 
 ## Overview
 
@@ -52,19 +55,22 @@ array auto boolean char else false float for function if integer print return st
 
 ## Types
 
-B-minor has four atomic types: integers, booleans, characters, and strings.
+B-minor has five atomic types: integers, floats, booleans, characters, and strings.
 A variable is declared as a name followed by a colon, then a type and
 an optional initializer.  For example:
 
 ```
 x: integer;
 y: integer = 123;
+f: float = 45.67;
 b: boolean = false;
 c: char    = 'q';
 s: string  = "hello bminor\n";
 ```
 
-An `integer` is always a signed 64 bit value.  `boolean` can take the literal values `true` or `false`.  `char` is a single 8-bit ASCII character.  `string` is a double-quoted constant string that is null-terminated and cannot be modified.
+An `integer` is always a signed 64 bit value.   `float` is a floating point number that follows the [IEEE 754 double-precision standard](https://en.wikipedia.org/wiki/Double-precision_floating-point_format).   `boolean` can take the literal values `true` or `false`.  `char` is a single 8-bit ASCII character.  `string` is a double-quoted constant string that is null-terminated and cannot be modified.
+
+`float` values can be represented in various ways. One method is to place the integer component, a period, and the fractional component all in a row, such as in `12.34`. Another valid method is to use the scientific representation of the value, which involves having a floating point value as described above followed by an exponent (represented as either `e` or `E`). Some examples of this would be `5.67E1` which has the value of 56.7, or `89e-2` which has the value of .89. `float` values can be preceeded by an optional plus or minus sign. The value of the exponent can also be preceeded by an optional plus or minus sign. Additionally, only the integer portion of the float can be omitted for valid values of `float`. This makes `.123` a valid floating point number but not `11.`.
 
 Both `char` and `string` may contain any printable character
 between ASCII decimal values 32 and 126 inclusive.
@@ -90,7 +96,7 @@ Code | Value | Meaning
 
 Both strings and identifiers may be up to **255** characters long, not including the null terminator.
 
-B-minor also supports arrays of a fixed size.  They may be declared with no value, which causes them to contain all zeros:
+B-minor also supports global arrays of a fixed size, and local arrays of variable size. They may be declared with no value, which causes them to contain all zeros:
 
 ```
 a: array [5] integer;
@@ -140,6 +146,9 @@ writechar(a);  // error: a is not a char!
 b: array [2] boolean = {true,false};
 x: integer = 0;
 x = b[0];      // error: x is not a boolean!
+
+x: integer = 0;
+y: float = x;  // error: integer types can not be implicitly converted to float
 ```
 
 Following are some (but not all) examples of correct type assignments:
@@ -168,8 +177,8 @@ Function definitions may not be nested.
 
 Within functions, basic statements may be 
 arithmetic expressions, return statements,
-print statements, if and if-else statements, for loops,
-or code within inner { } groups:
+print statements, if and if-else statements, 
+for loops, or code within inner { } groups:
 
 ```
 // An arithmetic expression statement.
@@ -189,7 +198,7 @@ if( temp>100 ) {
 
 // A for loop statement.
 for( i=0; i<100; i++ ) {
-    print i;0
+    print i;
 }
 ```
 
@@ -222,14 +231,14 @@ or `void` to indicate no type.  Function arguments
 may be of any type.  `integer`, `boolean`,
 and `char` arguments are passed by value, while
 `string` and `array` arguments are passed
-by reference. As in C, arrays passed
-by reference have an indeterminate size, and so the length
-is typically passed as an extra argument:
+by reference. The implementation of arrays will include a 
+`array_length()` function which can be used to obtain the length of
+an array at runtime. 
 
 ```
-printarray: function void ( a: array [] integer, size: integer ) = {
+printarray: function void ( a: array [] integer ) = {
 	i: integer;
-	for( i=0;i<size;i++) {
+	for( i=0;i<array_length(a);i++) {
 		print a[i], "\n";
 	}
 }
@@ -343,7 +352,7 @@ A: See section 7.3 in the textbook.
 A: No, those should be flagged as type errors, since we won't be implementing them in the code generation.
 
 - *Q: What sort of expression can be used to initialize the length of an array?*
-A: When an array is declared as a global or local variable, the length must be given as a constant integer.  Any more complex expression should result in a type error.  When an array is declared as a function parameter, it should have no length given.
+A: When an array is declared as a global variable, the length must be given as a constant integer. When an array is declared as a local variable, its length may be specified as an expression which the typechecker will evaluate as an integer. Any other expression should result in a type error.  When an array is declared as a function parameter, it should have no length given.
 
 -  *Q: What type should be assumed for a variable or function that cannot be resolved?*
 A:  There is no good assumption that you can make.  To avoid this problem, you should stop after the name resolution phase, if any name resolution errors are discovered.

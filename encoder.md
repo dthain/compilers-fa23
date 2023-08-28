@@ -50,7 +50,7 @@ Then, write a main program called `bminor` to exercise your functions.
 (This program will eventually become the main program of your whole compiler.)
 
 ```
-./bminor -encode input.bminor
+./bminor --encode input.bminor
 ```
 
 This main program should open the filename given on the command line,
@@ -85,7 +85,7 @@ You can do the same by creating a script called `runtest.sh` that does something
 
 for testfile in test/encode/good*.bminor
 do
-	if bminor -encode $testfile > $testfile.out
+	if bminor --encode $testfile > $testfile.out
 	then
 		echo "$testfile success (as expected)"
 	else
@@ -93,9 +93,9 @@ do
 	fi
 done
 
-for testfile in bad*.bminor
+for testfile in test/encode/bad*.bminor
 do
-	if bminor -encode test/encode/$testfile > $testfile.out
+	if bminor --encode test/encode/$testfile > $testfile.out
 	then
 		echo "$testfile success (INCORRECT)"
 	else
@@ -113,7 +113,7 @@ Now is the time to have a proper Makefile, and use it to build your compiler at 
 
 ## Turning In
 
-Be sure to `git add` and `git commit` all of your source files to your repository.  (Don't add object files, executables files, or anything else that is built from source files.)  Then review the [General Instructions for Turning In](general.md).  Make sure that your code is tagged as a release named `encode`.
+Be sure to `git add` and `git commit` all of your source files to your repository.  (Don't add object files, executables files, or anything else that is built from source files.)  Then review the [General Instructions for Turning In](general.md).  Make sure that your code is tagged as a release named `encoder`.
 
 **This assignment is due on Thursday, August 31st at 11:59PM  Late assignments are not accepted.**
 

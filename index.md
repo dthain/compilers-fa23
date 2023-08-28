@@ -20,6 +20,7 @@
 - [Canvas Course Page](https://canvas.nd.edu/courses/70800)
 - [Starter Code](https://github.com/dthain/compilerbook-starter-code)
 - [General Assignment Instructions](general)
+- [B-Minor 2023 Language Overview](bminor)
 - [Flex Scanner Generator](https://westes.github.io/flex/manual/)
 - [Bison Parser Generator](https://www.gnu.org/software/bison/manual/html_node/index.html)
 
@@ -46,8 +47,8 @@
 |Nov 6  | Ch 10      | Assembly        | Assembly              | **Typechecker Due** | Assembly       |
 |Nov 13 | Ch 11      | Codegen         | Codegen               |                  | Codegen           |
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   | *Thanksgiving*    |
-|Nov 27 | Ch 12      | Optimization    | Garbage Coll.         |                  |  Garbage Coll.    |
-|Dec 4  |            | Catch Up        | Review<br> **Code Generator Due** |      |                   |
+|Nov 27 | Ch 12      | Optimization    | Garbage Coll.         | **Codegen Part 1** |  Garbage Coll.    |
+|Dec 4  |            | Catch Up        | Review<br> **Codegen Part 2** |      |                   |
 |Dec 11 |            | **Final Exam 8-10AM** |                 |                  |                    |
 
 <!--

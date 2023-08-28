@@ -1,6 +1,7 @@
 ## Parser Assignment
 
 ## Objectives
+
 The objectives of this assignment are:
 - To design a grammar for a non-trivial language.
 - To solve grammar ambiguities through re-writing.
@@ -33,7 +34,7 @@ Use the scanner code from the prior assignment as your starting point, being sur
 
 If your program is invoked like this:
 ```
-./bminor -parse sourcefile.bminor
+./bminor --parse sourcefile.bminor
 ```
 
 Then it should behave as follows:
@@ -42,12 +43,13 @@ Then it should behave as follows:
 -  If the input has valid B-minor syntax, then `bminor` must emit `parse successful` and exit with status 0.
 
 If your program is invoked like this:
+
 ```
-./bminor -scan sourcefile.bminor
+./bminor --scan sourcefile.bminor
 ```
 
 Then it should continue to operate as in the previous assignment; this will facilitate debugging.
-You may of course reorganize or move code around as long as the standalone scanner still works.
+You may of course reorganize or move code around as long as the previous mode still works.
 
 ## Fix Scanner if Needed
 
@@ -93,43 +95,19 @@ then return to the code with fresh thoughts.
 
 ## Testing
 
-A compiler has many odd corner cases that you must carefully handle.
-You must test your program extensively by designing and testing a large
-number of test cases.  To encourage you to test thoroughly, we will
-also require you to turn in twenty test cases.  Ten should be
-named `good[0-9].bminor` and should contain valid B-minor programs.
-Ten should be named `bad[0-9].bminor` and should contain
-at least one **parse** error.  Be thorough, and take the time to
-write a new set of tests, distinct from your scanning tests.
+As with the previous step, create ten good test cases named `test/parser/good[0-10].bminor`
+that consist of valid B-minor programs and ten bad test cases `test/parser/bad[0-10].bminor`
+that contain parse errors.  Take the time to write thorough tests distinct from the previous submission.
 
-The starter code provides some example tests to give you the idea,
-but they are not comprehensive, so write your own thorough tests.
+You can also try these [example test cases](https://github.com/dthain/compilerbook-examples/tree/master/tests/parser)
+that come with the textbook but note that they don't cover the features specific to [B-Minor 2023](bminor).
+We will evaluate your code using these and some other hidden test cases.
 
-The exit status of `bminor` is **very important** because it indicates to the user whether the program succeeded or not.  The Unix convention is that the result of `main` (or the call to `exit`) should be zero to indicate success and non-zero to indicate failure.  We will use the program exit status to determine the correctness of your submissions and your test, using a script something like this:
+As always, exercise good style in programming by choosing sensible
+variable names, breaking complex tasks down into smaller functions,
+and using constructive comments where appropriate.
 
-```
-#!/bin/sh
-
-for testfile in good*.bminor
-do
-	if bminor -parse $testfile > $testfile.out
-	then
-		echo "$testfile success (as expected)"
-	else
-		echo "$testfile failure (INCORRECT)"
-	fi
-done
-
-for testfile in bad*.bminor
-do
-	if bminor -parse $testfile > $testfile.out
-	then
-		echo "$testfile success (INCORRECT)"
-	else
-		echo "$testfile failure (as expected)"
-	fi
-done
-```
+Ensure that `make clean`, `make`, and `make test`, and continue to work properly.
 
 ## Grading
 
@@ -139,7 +117,7 @@ so make sure that your code works there.  If you develop on your
 laptop or another computer, leave **plenty of time** before final submission
 to debug any differences between your computer and ours.
 
-**Tag your submission with `parse` in github to turn in.**
+**Tag your submission with `parser` in github to turn in.**
 
 For this assignment, your grade will be based upon the following:
 -  (20 points) General correctness of the code.
