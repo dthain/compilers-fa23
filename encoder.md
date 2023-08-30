@@ -57,7 +57,7 @@ This main program should open the filename given on the command line,
 read in the first line of the file and feed it to `string_decode`
 .
 If it contains a valid string, then use `string_encode` to convert
-it back (check that it is the same string), print it back out,
+it back <s>(check that it is the same string)</s>, print it back out,
 and exit indicating success.
 
 On the other hand, if the input is not a valid string, then
