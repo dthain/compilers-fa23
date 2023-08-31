@@ -45,28 +45,35 @@ Compile (ha) your answers together into one large document, taking care
 to organize and format answers and code, so that it is easy to follow.
 Submit one PDF document via Canvas.
 
-<!--
-
 ## Homework 2
 
-1. Match the names of months which end in "ember"
+**Problem 1** - Write regular expressions that match following entities.  (And don't match other things!)  Keep your expressions simple, sticking to the basic three operations and the limited extensions that we discussed in class.  You are encouraged to use `regex101.com` to test and develop your solutions.
 
-2. Match the pattern of a game of "duck duck goose" 
-    
-    Ex. "Duck Duck Duck Duck Goose", "Duck Duck Duck Goose"
+- (a) Match any [ICAO airport code](https://en.wikipedia.org/wiki/ICAO_airport_code    
+) from countries in North, Central, and South America.  Assume only upper case letters are used.  Take a good look at the black-and-white map that shows all the country.  Make the RE as compact as you can.  (Include the Carribean, exclude Greenland and Iceland.)
+  Examples: `KSBN` or `SBGL` or `PANC`
+- (b) Match any valid [IPv4 Address](https://en.wikipedia.org/wiki/Internet_Protocol_version_4) in dot-decimal format.  Note that no field can be larger than 255!
+  Examples: `192.168.1.1` or `10.200.1.1` or `255.255.255.255`
+- (c) Match any polynomial of degree three or less, with integer coefficients and powers.
+  Examples: `5x^3-10` or `-10x^2+3x+20`
+- (d) Match any string on the alphabet `{a,b,c}` of length three or greater that does **not** end in `abc`.
+  Examples: `cba` or `ccbbaa` or `cbacba` or `abcabb`
+- (e) Match any C-Style comment.
+  Examples: `/* a comment */` `/* also *** a comment */` `/*******/`
 
-3. Match any 48-bit MAC address in hexadecimal separated by hyphens. 
-    
-    Ex. 4C-8F-CE-DA-9E-F3
+**Problem 2:** Convert these REs into NFAs using Thompson's construction:
 
-4. Match any ICAO airport code from airports following the pattern of the United States, Canada, or Mexico    
-https://en.wikipedia.org/wiki/ICAO_airport_code    
+- (a) `for | [a-z]+ | [xb]?[0-9]+`
+- (b) `a ( bc*d | ed ) d+`
+- (c) `( a*b | b*a | ba ) *`
 
-    Ex. KSBN, MMLP, CYBE 
-    
-5. Match any valid IPv4 Address in dot-decimal format https://en.wikipedia.org/wiki/Internet_Protocol_version_4
-    
-    Ex. 192.168.1.1, 10.200.1.1
+**Problem 3:** Convert the NFAs in the previous problem into DFAs using the subset construction method.
+
+- (a) from above
+- (b) from above
+- (c) from above
+
+<!--    
 
 Do problems 1, 2, 4, 5, 6 at the end of Chapter 3.
 
