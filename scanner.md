@@ -43,6 +43,8 @@ For example, if the input looks like this:
 ```
 string
 1534
+3.4
+10e9
 'a'
 Notre Dame
 "\'Notre Dame\'";
@@ -53,6 +55,8 @@ then your output should be something like this:
 ```
 STRING
 INTEGER_LITERAL 1534
+FLOAT_LITERAL 3.4
+FLOAT_LITERAL 10e9
 CHARACTER_LITERAL a
 IDENTIFIER Notre
 IDENTIFIER Dame
@@ -82,5 +86,5 @@ Ensure that `make clean`, `make`, and `make test`, and continue to work properly
 
 To turn in via github, please review the [General Instructions for Turning In](general.md).  Make sure that your code is tagged as a release named "scanner".
 
-**This assignment is due on Wednesday, September 14th at 11:59PM  Late assignments are not accepted.**
+**This assignment is due on Thursday, September 14th at 11:59PM  Late assignments are not accepted.**
 
