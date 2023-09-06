@@ -86,5 +86,5 @@ Ensure that `make clean`, `make`, and `make test`, and continue to work properly
 
 To turn in via github, please review the [General Instructions for Turning In](general.md).  Make sure that your code is tagged as a release named "scanner".
 
-**This assignment is due on Wednesday, September 13th at 11:59PM  Late assignments are not accepted.**
+**This assignment is due on Thursday, September 14th at 11:59PM  Late assignments are not accepted.**
 
