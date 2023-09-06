@@ -20,6 +20,11 @@ statements, and any other program elements.
 If you think that the specification is not clear, be sure to ask for
 a clarification.
 
+For token types that have a corresponding value, you should extract the necessary
+value from `yytext`.  For string and character types, use the encoding functions that
+you wrote in the first assignment.  You may make any necessary changes to fix bugs or
+otherwise adapt the code to this stage.
+
 Make sure that you follow the [general instructions](general) for assignments,
 so that your work runs correctly on the student machines.
 We want you to have the benefit of using exactly the environment in which
