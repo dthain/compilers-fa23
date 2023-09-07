@@ -73,10 +73,6 @@ Submit one PDF document via Canvas.
 - (b) from above
 - (c) from above
 
-<!--    
-
-Do problems 1, 2, 4, 5, 6 at the end of Chapter 3.
-
 ## Homework 3
   
 Do problems 1, 2, 3, at the end of Chapter 4.
@@ -84,4 +80,4 @@ Do problems 1, 2, 3, at the end of Chapter 4.
 ## Homework 4
 
 Do problems 4, 5, 6 at the end of Chapter 4.
--->
+
