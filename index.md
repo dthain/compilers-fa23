@@ -40,7 +40,7 @@
 |Sep 18 | Ch 4.4-4.6 | Shift-Reduce Parsing | LR(0) Automaton| **HW3 Due**     | SLR Parsing      |
 |Sep 25 | Ch 5       | LR(1) and Recap      | Bison          | **HW4 Due**     | Bison            |
 |Oct 2  | Ch 5       | Parsing B-Minor      | Parsing B-Minor|                 | Abstract Syntax Tree | [AST Handout](ast.html) |
-|Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> **Parser Due** |     | **Midterm Exam** |
+|Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> [Parser Due](parser) |     | **Midterm Exam** |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
 |Oct 23 | Ch 7       | Type Systems    | Name Resolution       | **Printer Due**  | Typechecking      |
 |Oct 30 | Ch 9       | Memory Org      | Memory Org            |                  | Memory Org        |
