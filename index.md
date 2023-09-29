@@ -38,7 +38,7 @@
 |Sep 4  | Ch 3       | NFA->DFA             | Flex           | [HW2 Due](homework)     | Context Free Grammars | [Flex Scanner Generator](https://westes.github.io/flex/manual/)
 |Sep 11 | Ch 4.1-4.3 | Context Free Grammars| LL(1) Grammars | [Scanner Due](scanner) | Recursive Descent    |
 |Sep 18 | Ch 4.4-4.6 | LL(1) Table Parsing  | Shift-Reduce Parsing |  [HW3 Due](homework) | LR(0) Automaton |
-|Sep 25 | Ch 5       | SLR Parsing          |LR(1) Parsing        |     | Bison            |
+|Sep 25 | Ch 5       | SLR Parsing          |LR(1) Parsing        |     | Bison            | [Bison Examples](https://github.com/dthain/compilerbook-examples/tree/master/chapter5)
 |Oct 2  | Ch 5       | Parsing B-Minor<br>[HW4 Due](homework)  | Parsing B-Minor| | Abstract Syntax Tree | [AST Handout](ast.html) |
 |Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> [Parser Due](parser) |     | **Midterm Exam** |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
