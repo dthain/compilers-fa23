@@ -1,9 +1,10 @@
 # Midterm Exam
 
-The midterm exam will be held on Friday, October 14th during the usual class time.
+The midterm exam will be held on Friday, October 13th during the usual class time.
 It will be closed book, and no calculators or phones are needed.
-The exam will cover chapters 1-6 in the book, and anything from the course
-project and homeworks is fair game.  Be sure to study:
+The exam will cover chapters 1-5 in the book, and anything from the course
+project and homeworks is fair game.  Expect about four pages, each one covering a different problem.
+Be sure to study:
 
 - Overall structure and purpose of a compiler.
 - Scanning:
@@ -11,9 +12,6 @@ project and homeworks is fair game.  Be sure to study:
     - Writing regular expressions to match various tokens.
     - Converting REs into NFAs using Thompson's construction.
     - Converting NFAs into DFAs using subset construction.
-    - Minimizing DFAs using Hopcroft's algorithm.
-    - Conversion of regular expressions into NFAs and DFAs.
-    - Use of Flex to generate a scanner.
 - Context Free Grammars:
     - Identifying and removing ambiguity from CFGs.
     - Top-Down Parsing
@@ -27,4 +25,8 @@ project and homeworks is fair game.  Be sure to study:
         - Generating the LR(1) automaton and parse table.
         - Generating the LALR automaton.
         - Performing LR(1) parsing.
-    - Use of Bison to generate a parser.
+
+An excellent way to study for the exam would be to work in small groups,
+and propose problems that are variations on those found in the homeworks.
+Work your solutions independently first, and then get together to see if you 
+agree on the results. 
