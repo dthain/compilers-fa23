@@ -294,8 +294,12 @@ A: No, they are not part of B-minor.
 
 - **Q: Can an integer have a leading negative/positive sign?**
 
-A: Yes, and it's important later that this counts as a single
-token, and not as two separate tokens. `-10` and `+123` should scan as NUMBER.
+<s>A: Yes, and it's important later that this counts as a single
+token, and not as two separate tokens. `-10` and `+123` should scan as NUMBER.</s>
+
+A: To avoid parsing problems, the scanner should treat an integer
+as just a sequence of digits.  In the parsing step, we will allow for
+a unary plus or minus to modify the integer.
 
 ### Parsing
 
