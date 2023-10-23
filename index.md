@@ -40,7 +40,7 @@
 |Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> [Parser Due](parser) |     | **[Midterm Exam](midterm)** |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
 |Oct 23 | Ch 7       | AST / Printing  | Type Systems          |                  | Name Resolution   |
-|Oct 30 | Ch 9       | Typechecking <br> [**Printer Due**](printer) | Memory Org            |                  |  Memory Org        |
+|Oct 30 | Ch 9       | Typechecking <br> **[Printer Due](printer)** | Memory Org            |                  |  Memory Org        |
 |Nov 6  | Ch 10      | Assembly        | Assembly              | **Typechecker Due** | Assembly       | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
 
 |Nov 13 | Ch 11      | Codegen         | Codegen               |                  | Codegen           |
