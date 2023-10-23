@@ -24,9 +24,6 @@
 - [Flex Scanner Generator](https://westes.github.io/flex/manual/)
 - [Bison Parser Generator](https://www.gnu.org/software/bison/manual/html_node/index.html)
 
-<!-- - [General Assignment Instructions](general.md) -->
-<!-- - [B-Minor 2023 Language Guide](bminor.md) -->
-
 ## Course Schedule
 
 (Subject to change as needed.)
@@ -42,9 +39,10 @@
 |Oct 2  | Ch 5       | Parsing B-Minor<br>[HW4 Due](homework)  | Parsing B-Minor| | Abstract Syntax Tree | [AST Handout](ast.html) |
 |Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> [Parser Due](parser) |     | **[Midterm Exam](midterm)** |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
-|Oct 23 | Ch 7       | Type Systems    | Name Resolution       | **Printer Due**  | Typechecking      |
-|Oct 30 | Ch 9       | Memory Org      | Memory Org            |                  | Memory Org        |
-|Nov 6  | Ch 10      | Assembly        | Assembly              | **Typechecker Due** | Assembly       |
+|Oct 23 | Ch 7       | AST / Printing  | Type Systems          |                  | Name Resolution   |
+|Oct 30 | Ch 9       | Typechecking <br> [**Printer Due**](printer) | Memory Org            |                  |  Memory Org        |
+|Nov 6  | Ch 10      | Assembly        | Assembly              | **Typechecker Due** | Assembly       | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
+
 |Nov 13 | Ch 11      | Codegen         | Codegen               |                  | Codegen           |
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   | *Thanksgiving*    |
 |Nov 27 | Ch 12      | Optimization    | Garbage Coll.         | **Codegen Part 1** |  Garbage Coll.    |
@@ -55,8 +53,6 @@
 
 [CFG Tool](https://web.stanford.edu/class/archive/cs/cs103/cs103.1156/tools/cfg/)
 [Joke](https://xkcd.com/1090/)
-[Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
-[Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
 [Bison Manual](https://www.gnu.org/software/bison/manual/html_node/index.html)
 [Bison Examples](https://github.com/dthain/compilerbook-examples/tree/master/chapter5)
 -->
