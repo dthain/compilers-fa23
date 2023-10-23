@@ -134,9 +134,6 @@ whether you ident by tabs or spaces (or how many spaces).
 As with the previous step, create ten good test cases named `test/printer/good[0-10].bminor`
 that consist of valid B-minor programs and ten bad test cases `test/printer/bad[0-10].bminor`
 that contain at least one parsing error.
-
-You can also try these [example test cases](https://github.com/dthain/compilerbook-examples/tree/master/tests/parser)
-that come with the textbook but note that they don't cover the features specific to [B-Minor 2023](bminor).
 We will evaluate your code using these and some other hidden test cases.
 
 **Because the output of the pretty-printer must be a valid B-minor program,
@@ -152,12 +149,7 @@ Ensure that `make clean`, `make`, and `make test`, and continue to work properly
 
 ## Grading
 
-Your submission will be tested on the ND student Linux machines,
-so make sure that your code works there.  If you develop on your
-laptop or another computer, leave *plenty of time* before final submission
-to debug any differences between your computer and ours.
-
-**Tag your submission with `print` in github to turn in.**
+To turn in via github, please review the [general instructions for assignments](general)  Make sure that your code is tagged as a release named **printer**.
 
 For this assignment, your grade will be based upon the following:
 
@@ -167,8 +159,9 @@ For this assignment, your grade will be based upon the following:
 -  (20 points) Correctness on the instructors' hidden test cases.
 -  (10 points) Good programming style.  Each of the program components (main, scanner, parser) should be cleanly separated into multiple source files, complex or repetitive tasks should be broken into multiple functions, identifiers should be sensibly chosen, and the code generally commented and readable.
 
-This assignment is due **Thursday, October 26th at 11:59PM**.  Late assignments are not accepted.
+This assignment is due **Monday, October 30th at 11:59PM**.  Late assignments are not accepted.
 
 ## Frequently Asked Questions
 
-See the bottom of the [B-Minor Language Guide](bminor.md) for some FAQs about parsing.
+See the bottom of the [B-Minor Language Guide](bminor.md) for some FAQs about printing.
+
