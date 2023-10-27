@@ -131,9 +131,9 @@ whether you ident by tabs or spaces (or how many spaces).
 
 ## Testing
 
-As with the previous step, create ten good test cases named `test/printer/good[0-10].bminor`
-that consist of valid B-minor programs and ten bad test cases `test/printer/bad[0-10].bminor`
-that contain at least one parsing error.
+As with the previous step, create <s>ten</s> **twenty** good test cases named `test/printer/good[0-10].bminor`
+that consist of valid B-minor programs <s>and ten bad test cases `test/printer/bad[0-10].bminor`
+that contain at least one parsing error.</s>
 We will evaluate your code using these and some other hidden test cases.
 
 **Because the output of the pretty-printer must be a valid B-minor program,
