@@ -37,15 +37,15 @@
 |Sep 18 | Ch 4.4-4.6 | LL(1) Table Parsing  | Shift-Reduce Parsing |  [HW3 Due](homework) | LR(0) Automaton |
 |Sep 25 | Ch 5       | SLR Parsing          |LR(1) Parsing        |     | Bison            | [Bison Examples](https://github.com/dthain/compilerbook-examples/tree/master/chapter5)
 |Oct 2  | Ch 5       | Parsing B-Minor<br>[HW4 Due](homework)  | Parsing B-Minor| | Abstract Syntax Tree | [AST Handout](ast.html) |
-|Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> [Parser Due](parser) |     | **[Midterm Exam](midterm)** |
+|Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> **[Parser Due](parser)** |     | **[Midterm Exam](midterm)** |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
 |Oct 23 | Ch 7       | AST / Printing  | Type Systems          |                  | Name Resolution   |
-|Oct 30 | Ch 9       | Typechecking <br> **[Printer Due](printer)** | Memory Org            |                  |  Memory Org        |
-|Nov 6  | Ch 10      | Assembly        | Assembly              | [Resolver Due](resolve) | Assembly       | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
-|Nov 13 | Ch 11      | Codegen         | Codegen               | [Typecheck Due](typecheck) | Codegen           |
+|Oct 30 | Ch 9       | Typechecking <br> **[Printer Due](printer)** | Typechecking  |                  |  Memory Org        |
+|Nov 6  | Ch 10      | Assembly        | Assembly              | **[Resolver Due](resolve)** | Assembly       | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
+|Nov 13 | Ch 11      | Codegen         | Codegen               | **[Typecheck Due](typecheck)** | Codegen           |
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   | *Thanksgiving*     |
 |Nov 27 | Ch 12      | Optimization    | Garbage Coll.         |                  |  Garbage Coll.     |
-|Dec 4  |            | Catch Up        | Review                | [Codegen Due](codegen)  |             |
+|Dec 4  |            | Catch Up        | Review                | **[Codegen Due](codegen)**  |             |
 |Dec 11 |            | **Final Exam 8-10AM** |                 |                  |                    |
 
 <!--
