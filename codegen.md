@@ -80,10 +80,6 @@ Make sure that your test cases start with very simple examples and work up to
 complex examples with complex expressions, control flow statements, and functions.
 (You tested all the bad cases in previous stages, so you don't need to include bad cases now.)
 
-You can also try these [example test cases](https://github.com/dthain/compilerbook-examples/tree/master/tests/codegen)
-that come with the textbook but note that they don't cover the features specific to [B-Minor 2023](bminor).
-We will evaluate your code using these and some other hidden test cases.
-
 As always, exercise good style in programming by choosing sensible
 variable names, breaking complex tasks down into smaller functions,
 and using constructive comments where appropriate.
@@ -106,7 +102,5 @@ Your grade on this project will be based upon:
 - Correctness on our test cases. (20 percent)
 - Good programming style. (10 percent)
  
-The first part of the code generator is due **Thursday, November 30th at 11:59PM**.  Late assignments are not accepted.
-
-The final code generator is due **Wednesday, Dec 6th at 11:59PM**.  Late assignments are not accepted.
+The final code generator is due **Thursday, Dec 7th at 11:59PM**.  Late assignments are not accepted.
 
