@@ -40,11 +40,11 @@
 |Oct 9  | Ch 6       | Abstract Syntax Tree | Review <br> **[Parser Due](parser)** |     | **[Midterm Exam](midterm)** |
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
 |Oct 23 | Ch 7       | AST / Printing  | Type Systems          |                  | Name Resolution   |
-|Oct 30 | Ch 9       | Typechecking <br> **[Printer Due](printer)** | Typechecking  |                  |  Typechecking |
-|Nov 6  | Ch 10      | Memory Org | Memory Org | **[Resolver Due](resolve)** | Memory Org | 
-|Nov 13 | Ch 11      | Assembly         | Assembly               | **[Typecheck Due](typecheck)** | Assembly | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
+|Oct 30 | Ch 7       | Typechecking <br> **[Printer Due](printer)** | Typechecking  |                  |  Typechecking |
+|Nov 6  | Ch 9       | Memory Org | Memory Org | **[Resolver Due](resolve)** | Memory Org | 
+|Nov 13 | Ch 10      | Assembly         | Assembly               | **[Typecheck Due](typecheck)** | Assembly | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   | *Thanksgiving*     |
-|Nov 27 | Ch 12      | Codegen          | Codegen.         |                      |  Codegen |
+|Nov 27 | Ch 11      | Codegen          | Codegen.         |                      |  Codegen |
 |Dec 4  |            | Catch Up        | Review                | **[Codegen Due](codegen)**  |             |
 |Dec 11 |            | **Final Exam 8-10AM** |                 |                  |                    |
 
