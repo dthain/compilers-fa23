@@ -41,12 +41,11 @@
 |Oct 16 |            | *Fall Break*    | *Fall Break*          | *Fall Break*     | *Fall Break*      |
 |Oct 23 | Ch 7       | AST / Printing  | Type Systems          |                  | Name Resolution   |
 |Oct 30 | Ch 9       | Typechecking <br> **[Printer Due](printer)** | Memory Org            |                  |  Memory Org        |
-|Nov 6  | Ch 10      | Assembly        | Assembly              | **Typechecker Due** | Assembly       | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
-
-|Nov 13 | Ch 11      | Codegen         | Codegen               |                  | Codegen           |
+|Nov 6  | Ch 10      | Assembly        | Assembly              | **Resolver Due** | Assembly       | [Intel Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) <br> [Calling Convention](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
+|Nov 13 | Ch 11      | Codegen         | Codegen               | **Typecheck Due** | Codegen           |
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   | *Thanksgiving*    |
-|Nov 27 | Ch 12      | Optimization    | Garbage Coll.         | **Codegen Part 1** |  Garbage Coll.    |
-|Dec 4  |            | Catch Up        | Review<br> **Codegen Part 2** |      |                   |
+|Nov 27 | Ch 12      | Optimization    | Garbage Coll.         |                  |  Garbage Coll.    |
+|Dec 4  |            | Catch Up        | Review<br> **Codegen Due** |      |                   |
 |Dec 11 |            | **Final Exam 8-10AM** |                 |                  |                    |
 
 <!--
