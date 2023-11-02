@@ -4,7 +4,7 @@
 
 The Bminor language specifies [double precision floating point](https://en.wikipedia.org/wiki/IEEE_754). This means that floating point variables are stored as 64 bit values (equivalent to C's `double` type).
 
-There are four supported arithmetic operators for floating point types for simplicity: +, -, *, / (an aspiring student could add support for more operators). The six comparison operators (< <= > >= == !=) are also supported.
+There are four supported arithmetic operators for floating point types for simplicity: +, -, *, / (an aspiring student could add support for more operators). The six comparison operators (<, <=, >, >=, ==, !=) are also supported.
 
 ## Floating point representation
 
@@ -87,6 +87,19 @@ y:
     MULSD   %xmm1, %xmm0 # xmm0 has the value of x * y (18.7)
     DIVSD   %xmm1, %xmm0 # xmm0 has the value of (x * y) / y = x (5.5)
 ```
+
+## Comparions
+To implement comparison operators for floating points (<, <=, >, >=, ==, !=), we will use the following family of functions.
+```
+    CMPEQSD  %xmm0, %xmm1	# xmm0 ==  xmm1
+    CMPNEQSD %xmm0, %xmm1   # xmm0 !=  xmm1
+    CMPLTSD  %xmm0, %xmm1	# xmm0 <   xmm1
+    CMPLESD  %xmm0, %xmm1	# xmm0 <=  xmm1
+    CMPNLTSD %xmm0, %xmm1	# xmm0 !<  xmm1
+    CMPNLESD %xmm0, %xmm1	# xmm0 !<= xmm1
+```
+
+The result is placed in the first operand. If the comparison is true, it sets the first 64 bits of the first operand (xmm0 in this case) to be all 1. If it is false, it sets the first 64 bits of the first operand to be all 0.
 
 ## Function calls
 Floating point values have special rules when used as parameters of a function. Here is a rough overview:
