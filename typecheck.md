@@ -130,7 +130,7 @@ For this assignment, your grade will be based upon the following:
 -  Correctness on our test cases.  (20 percent)
 -  Good programming style. (10 percent)
 
-This assignment is due **Thursday, November 16th at 11:59PM**.  Late assignments are not accepted.
+This assignment is due <s>**Thursday, November 16th at 11:59PM**</s> **Friday, November 17th at 11:59PM**.  Late assignments are not accepted.
 
 ## Frequently Asked Questions
 
