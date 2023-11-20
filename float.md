@@ -8,14 +8,16 @@ There are four supported arithmetic operators for floating point types for simpl
 
 ## Floating point representation
 
-In a normal assembler, one could write the following to represent the global x with a floating point number value of 5.5:
+To place a floating point literal into a memory location, one can do the following:
 
 ```
 x:
-  	.quad 5.5
+  	.double 5.5
 ```
 
-We would hope that the assembler could do the work for us of convering the floating point 5.5 to its binary value. In GCC's assembly synatx, things are not quite so simple! If you compile a C program using double values to assembly using GCC, you'll find something interesting:
+If you are a little curious about some more information about floating point representation, please read on. Otherwise, feel free to skip to the next section. 
+
+Interestingly, if you compile C programs into assembly using GCC, things are not quite so simple as the above! Instead, you'll find something interesting:
 
 ```
 x:
@@ -23,7 +25,7 @@ x:
     .long   1072902963
 ```
 
-GCC does some bit hacking and stores floating point values as integers (since doubles are 64 bits wide, a single double takes two long values of 32 bits each). In order to simplify things, we can instead store the floating point value as a single 64 bit value. We can perform the conversion using something like the C program below:
+GCC does some bit hacking and stores floating point values as integers (since doubles are 64 bits wide, a single double takes two long values of 32 bits each). We can perform this conversion from float to integer using something like the C program below:
 
 ```
 #include <stdio.h>
@@ -41,9 +43,11 @@ The magic happens in the following line: `long *p = &x;`. We take the binary rep
 ```
 x:
   	.quad 4617878467915022336
+y:
+  	.double 5.5
 ```
 
-And now x has the correct floating point representation for 5.5
+And now x and y have the same floating point value! If you find it easier, you can represent all your floating point literals as bit-hacked integers as above.
 
 ## Registers
 All 64 bit floating point computations on modern x86-64 systems are performed in the xmm registers. These are 128 bit wide registers that can also be used for vector operations, but for our purposes they will be general purpose floating point registers. There are 8 xmm registers, xmm0-xmm8. We can load a floating point value into one of these registers like any other register (assuming we have the global x shown above):
