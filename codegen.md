@@ -56,12 +56,31 @@ will require you do go back and make a few changes to earlier stages.
 Do what you need to do in order to get the code working!
 The assembly code that you produce must work correctly, but it need not be simple, pretty, or optimal.
 
-You may make the following simplifying assumptions in this final stage:
+## Baseline Requirements
+
+You may make the following simplifying assumptions for your code generator and receive full credit:
+
 - Due to the large number of X86-64 registers, you may use a simple non-spilling register allocator,
 and fail with an "out of registers" error on really complicated nested expressions.
 - To keep the calling conventions simple, calls to functions with more than six arguments may fail with a "too many arguments" error.
-- Only one-dimensional arrays of integers at global scope must be implemented.
+- Only one-dimensional arrays of integers of constant size at global scope must be implemented.
 Arrays of other types, or arrays as parameters or local variables may fail with an "array not implemented" error.
+- Floating point types may fail code generation with an "floating not not supported" error.
+
+The baseline compiler should be tagged as `codegen`.
+
+## Extra Credit Options
+
+Once you have **perfected** the baseline compiler, then you may attempt one of options for up to 10 percent extra credit.
+
+- Implement support for floating point values.  It should be possible to declare and use floating point values
+at global scope, local scope, in function paramers, in arrays, in expressions, and in print statements.
+Conversion between integers and floating point is not required.  See these [notes on floating point](float) to get started.
+- Implement support for dynamically allocated and checked arrays.  Arrays declared at local scope may have a size determined
+at runtime.  This requires that the array be allocated using `malloc`.  The size of the array should be stored in the first
+cell, so that the `array_length` operator can return the actual size, and array lookups should be checked for valid bounds.
+
+Any extra credit attempted should be tagged as `codegen-extracredit`
 
 ## Hints
 
@@ -88,7 +107,7 @@ Ensure that `make clean`, `make`, and `make test`, and continue to work properly
 
 ## Turning In
 
-**Tag your submission with `codegen` in github to turn in.**
+**Tag your submission with `codegen` in github to turn in.**  If you have attempted extra credit, then tag that additionally as `codegen-extracredit`.
 
 Your submission will be tested on the CSE student Linux machines,
 so be sure to follow the [general instructions](general) and make
