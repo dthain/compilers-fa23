@@ -46,7 +46,7 @@
 |Nov 20 | Ch 11      | Codegen         | *Thanksgiving*        | *Thanksgiving*   | *Thanksgiving*     |
 |Nov 27 | Ch 11      | Codegen          | Codegen.         |                      |  Codegen |
 |Dec 4  |            | Catch Up        | Review                | **[Codegen Due](codegen)**  |             |
-|Dec 11 |            | **Final Exam 8-10AM** |                 |                  |                    |
+|Dec 11 |            | **[Final Exam 8-10AM](final)** |                 |                  |                    |
 
 <!--
 
